@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Portal - Future of Web Development</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="overlay"></div>
+    
+    <!-- Animated Background Elements -->
+    <div class="cyber-grid"></div>
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">
+                <i class="fas fa-code"></i> 
+                <span class="logo-text">CSS</span>
+                <span class="logo-subtitle">FUTURE</span>
+            </h1>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-rocket"></i>
+                    <span>About</span>
+                </a>
+                <a href="#features" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Features</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>MASTER CSS</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Future of</span>
+                    <br>
+                    <span class="cyber-text">Web Development</span>
+                </h1>
+                <p class="hero-subtitle">Experience the next generation of CSS learning with AI-powered examples, holographic interfaces, and quantum animations</p>
+                
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">CSS Properties</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Interactive Demos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">Hours Learning</div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="css-info.html" class="primary-btn cyber-btn">
+                        <i class="fas fa-rocket"></i>
+                        <span>Launch Learning</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#features" class="secondary-btn hologram-btn">
+                        <i class="fas fa-play"></i>
+                        <span>Experience Demo</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hologram-container">
+                    <div class="hologram-card" data-tilt>
+                        <div class="hologram-content">
+                            <i class="fas fa-css3-alt"></i>
+                            <h3>CSS3</h3>
+                            <div class="hologram-lines"></div>
+                        </div>
+                    </div>
+                    <div class="hologram-card" data-tilt>
+                        <div class="hologram-content">
+                            <i class="fas fa-palette"></i>
+                            <h3>Styling</h3>
+                            <div class="hologram-lines"></div>
+                        </div>
+                    </div>
+                    <div class="hologram-card" data-tilt>
+                        <div class="hologram-content">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Responsive</h3>
+                            <div class="hologram-lines"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="cyber-accent">Quantum</span> Learning Features
+                </h2>
+                <p class="section-subtitle">Experience the future of education with cutting-edge technology</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card cyber-card">
+                    <div class="card-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Learning</h3>
+                    <p>Adaptive learning paths that evolve with your progress</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" data-progress="95"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card cyber-card">
+                    <div class="card-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>Holographic Interface</h3>
+                    <p>3D visualizations and interactive code playgrounds</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" data-progress="88"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card cyber-card">
+                    <div class="card-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Quantum Animations</h3>
+                    <p>Particle-based animations and fluid transitions</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" data-progress="92"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card cyber-card">
+                    <div class="card-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Neural Networks</h3>
+                    <p>Smart suggestions and intelligent code completion</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" data-progress="87"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card cyber-card">
+                    <div class="card-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Code Blocks</h3>
+                    <p>Rotate and explore code in three-dimensional space</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <div class="feature-card cyber-card">
+                    <div class="card-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Lightning Speed</h3>
+                    <p>Instant feedback and real-time code execution</p>
+                    <div class="feature-progress">
+                        <div class="progress-bar" data-progress="96"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section" id="about">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="cyber-accent">Holographic</span> Tutorial
+                </h2>
+            </div>
+            <div class="video-wrapper cyber-frame">
+                <div class="frame-glow"></div>
+                <iframe src="https://www.youtube.com/embed/1PnVor36_40" title="CSS Crash Course" allowfullscreen></iframe>
+            </div>
+            <p class="video-description">Experience CSS learning in the future with our holographic tutorial system</p>
+        </section>
+
+        <!-- Quick Start Section -->
+        <section class="quick-start-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="cyber-accent">Ready to</span> Launch?
+                </h2>
+            </div>
+            <div class="quick-start-content">
+                <div class="start-card cyber-pod">
+                    <div class="pod-glow"></div>
+                    <i class="fas fa-rocket"></i>
+                    <h3>Quantum Launch</h3>
+                    <p>Jump into the future of CSS programming with our advanced learning system</p>
+                    <a href="css-info.html" class="start-btn cyber-btn">
+                        <span>Initiate Launch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="start-card cyber-pod">
+                    <div class="pod-glow"></div>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Neural Training</h3>
+                    <p>Follow our AI-powered learning path from basics to advanced mastery</p>
+                    <a href="css-info.html" class="start-btn cyber-btn">
+                        <span>Begin Training</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <button onclick="scrollToTop()" title="Return to Orbit" class="cyber-fab">
+            <i class="fas fa-rocket"></i>
+            <div class="fab-glow"></div>
+        </button>
+    </div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="loading-text">INITIALIZING NEURAL NETWORK</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loadingScreen');
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 1000);
+            }, 2000);
+        });
+
+        // Animated Statistics
+        function animateStats() {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    stat.textContent = Math.floor(current);
+                }, 16);
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    if (entry.target.classList.contains('stats-container')) {
+                        animateStats();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.feature-card, .stats-container, .hologram-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation link
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Enhanced Particle System
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 100;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+                particle.style.opacity = Math.random() * 0.5 + 0.3;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles
+        createParticles();
+
+        // Typing animation for hero title
+        function typeWriter(element, text, speed = 50) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Start typing animation when page loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const heroTitle = document.querySelector('.hero-title');
+                const originalText = heroTitle.innerHTML;
+                typeWriter(heroTitle, originalText, 30);
+            }, 2500);
+        });
+
+        // Hologram card animations
+        const hologramCards = document.querySelectorAll('.hologram-card');
+        hologramCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.3}s`;
+        });
+
+        // Progress bar animations
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const progress = bar.getAttribute('data-progress');
+                bar.style.width = progress + '%';
+            });
+        }
+
+        // Trigger progress animation when features section is visible
+        const featuresObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(animateProgressBars, 500);
+                }
+            });
+        });
+
+        featuresObserver.observe(document.querySelector('.features-section'));
+    </script>
+</body>
+</html>

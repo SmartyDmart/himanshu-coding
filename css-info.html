@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Programming Guide - Future of Web Development</title>
+    <link rel="stylesheet" href="css-info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="overlay"></div>
+    
+    <!-- Cyber Grid Background -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Floating Orbs -->
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="Index.HTML" class="back-btn cyber-btn">
+                <i class="fas fa-rocket"></i>
+                <span>Return to Orbit</span>
+                <div class="btn-glow"></div>
+            </a>
+            <h1 class="logo">
+                <i class="fas fa-css3-alt"></i> 
+                <span class="logo-text">CSS</span>
+                <span class="logo-subtitle">FUTURE</span>
+            </h1>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Section 1: Basic Syntax -->
+        <section class="content-section cyber-card" id="basic-syntax">
+            <div class="card-glow"></div>
+            <div class="section-header">
+                <i class="fas fa-code"></i>
+                <h2>1. Basic Syntax</h2>
+            </div>
+            <div class="code-example">
+                <div class="code-block">
+                    <h3>Example:</h3>
+                    <code>h1 { font-size: 30px; }</code>
+                </div>
+                <div class="explanation">
+                    <div class="term">
+                        <strong>h1</strong> → selector
+                    </div>
+                    <div class="term">
+                        <strong>{ }</strong> → Declaration
+                    </div>
+                    <div class="term">
+                        <strong>font-size:</strong> → Property
+                    </div>
+                    <div class="term">
+                        <strong>30px;</strong> → Value
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Styling Methods -->
+        <section class="content-section cyber-card" id="styling-methods">
+            <div class="card-glow"></div>
+            <div class="section-header">
+                <i class="fas fa-paint-brush"></i>
+                <h2>2. Styling Methods</h2>
+            </div>
+            
+            <div class="method-card hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-1"></i> Inline Styling (Highest Priority)</h3>
+                <div class="code-block">
+                    <code>&lt;h1 style="property:value;"&gt; ... &lt;/h1&gt;</code>
+                </div>
+            </div>
+
+            <div class="method-card hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-2"></i> Internal Styling</h3>
+                <div class="code-block">
+                    <pre><code>&lt;head&gt;
+&lt;style&gt;
+    h1 {
+        property: value;
+    }
+&lt;/style&gt;
+&lt;/head&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="method-card hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-3"></i> External Styling (Lowest Priority)</h3>
+                <div class="code-block">
+                    <h4>HTML File:</h4>
+                    <pre><code>&lt;head&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;</code></pre>
+                    <h4>CSS File:</h4>
+                    <pre><code>h1 {
+    property: value;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: HTML Refresher -->
+        <section class="content-section cyber-card" id="html-refresher">
+            <div class="card-glow"></div>
+            <div class="section-header">
+                <i class="fab fa-html5"></i>
+                <h2>3. HTML Refresher</h2>
+            </div>
+            <div class="html-grid">
+                <div class="html-item">
+                    <strong>Element:</strong> &lt;p&gt;this is a paragraph&lt;/p&gt;
+                </div>
+                <div class="html-item">
+                    <strong>Tag:</strong> &lt;p&gt;&lt;/p&gt;
+                </div>
+                <div class="html-item">
+                    <strong>Content:</strong> this is a paragraph
+                </div>
+                <div class="html-item">
+                    <strong>Attribute:</strong> &lt;tag attribute="value"&gt;Text Content&lt;/tag&gt;
+                </div>
+                <div class="html-item">
+                    <strong>DOM:</strong> Document Object Model
+                </div>
+                <div class="html-item">
+                    <strong>Comments:</strong> /* Text */
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Selectors -->
+        <section class="content-section cyber-card" id="selectors">
+            <div class="card-glow"></div>
+            <div class="section-header">
+                <i class="fas fa-crosshairs"></i>
+                <h2>4. Selectors</h2>
+            </div>
+            <div class="selector-grid">
+                <div class="selector-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Element Selector</h4>
+                    <code>h1 { }</code>
+                </div>
+                <div class="selector-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Universal Selector</h4>
+                    <code>* { }</code>
+                </div>
+                <div class="selector-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>ID Selector</h4>
+                    <code>#ID_name { }</code>
+                    <small>(Only for one specific element)</small>
+                </div>
+                <div class="selector-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Class Selector</h4>
+                    <code>.Class_name { }</code>
+                    <small>(For group of elements)</small>
+                </div>
+                <div class="selector-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Group Selector</h4>
+                    <code>h1, h2, p, #ID_name, .Class_name { }</code>
+                </div>
+                <div class="selector-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Descendant Selector</h4>
+                    <code>#abc p i { }</code>
+                    <small>Targets &lt;i&gt; inside &lt;p&gt; inside #abc</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Properties -->
+        <section class="content-section cyber-card" id="properties">
+            <div class="card-glow"></div>
+            <div class="section-header">
+                <i class="fas fa-cogs"></i>
+                <h2>5. Properties</h2>
+            </div>
+
+            <!-- Color Properties -->
+            <div class="property-group hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-palette"></i> Color Properties</h3>
+                <div class="property-item">
+                    <strong>Color:</strong> <code>color: green;</code>
+                </div>
+                <div class="property-item">
+                    <strong>RGB:</strong> <code>color: rgb(255, 0, 124);</code>
+                </div>
+                <div class="property-item">
+                    <strong>Hex:</strong> <code>color: #ff006b;</code>
+                </div>
+                <div class="property-item">
+                    <strong>RGBA:</strong> <code>color: rgba(255, 0, 124, 0.73);</code>
+                </div>
+            </div>
+
+            <!-- Size Properties -->
+            <div class="property-group hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-expand-arrows-alt"></i> Size Properties</h3>
+                <div class="property-item">
+                    <strong>Height:</strong> <code>height: 50px;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Width:</strong> <code>width: 50px;</code>
+                </div>
+            </div>
+
+            <!-- Background Properties -->
+            <div class="property-group hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-image"></i> Background Properties</h3>
+                <div class="property-item">
+                    <strong>Background Color:</strong> <code>background-color: red;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Background Image:</strong> <code>background-image: url(...);</code>
+                </div>
+                <div class="property-item">
+                    <strong>Background Size:</strong> <code>background-size: cover;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Background Repeat:</strong> <code>background-repeat: no-repeat;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Background Position:</strong> <code>background-position: center;</code>
+                </div>
+            </div>
+
+            <!-- Text Properties -->
+            <div class="property-group hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-font"></i> Text Properties</h3>
+                <div class="property-item">
+                    <strong>Text Align:</strong> <code>text-align: center;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Text Decoration:</strong> <code>text-decoration: underline;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Text Transform:</strong> <code>text-transform: uppercase;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Line Height:</strong> <code>line-height: 20px;</code>
+                </div>
+            </div>
+
+            <!-- Font Properties -->
+            <div class="property-group hologram-card">
+                <div class="hologram-lines"></div>
+                <h3><i class="fas fa-text-height"></i> Font Properties</h3>
+                <div class="property-item">
+                    <strong>Font Size:</strong> <code>font-size: 25px;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Font Weight:</strong> <code>font-weight: bold;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Font Style:</strong> <code>font-style: italic;</code>
+                </div>
+                <div class="property-item">
+                    <strong>Font Family:</strong> <code>font-family: Arial, Helvetica, sans-serif;</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Shorthand -->
+        <section class="content-section cyber-card" id="shorthand">
+            <div class="card-glow"></div>
+            <div class="section-header">
+                <i class="fas fa-compress-arrows-alt"></i>
+                <h2>6. Shorthand Properties</h2>
+            </div>
+            <div class="shorthand-grid">
+                <div class="shorthand-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Color</h4>
+                    <code>color: value;</code>
+                </div>
+                <div class="shorthand-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Background</h4>
+                    <code>background: color image repeat attachment position;</code>
+                </div>
+                <div class="shorthand-card hologram-card">
+                    <div class="hologram-lines"></div>
+                    <h4>Visibility</h4>
+                    <code>visibility: hidden/visible;</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo Section -->
+        <section class="content-section cyber-card" id="demo">
+            <div class="card-glow"></div>
+            <div class="section-header">
+                <i class="fas fa-play-circle"></i>
+                <h2>Interactive CSS Demo</h2>
+            </div>
+            <div class="demo-container">
+                <div class="demo-box hologram-card" id="demo-box">
+                    <div class="hologram-lines"></div>
+                    <h3>Hover over me!</h3>
+                    <p>This box demonstrates various CSS properties</p>
+                </div>
+                <div class="demo-controls">
+                    <button onclick="changeColor()" class="cyber-btn">
+                        <i class="fas fa-palette"></i>
+                        <span>Change Color</span>
+                    </button>
+                    <button onclick="changeSize()" class="cyber-btn">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <span>Change Size</span>
+                    </button>
+                    <button onclick="resetDemo()" class="cyber-btn">
+                        <i class="fas fa-undo"></i>
+                        <span>Reset</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <button onclick="scrollToTop()" title="Return to Orbit" class="cyber-fab">
+            <i class="fas fa-rocket"></i>
+            <div class="fab-glow"></div>
+        </button>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-css3-alt"></i>
+            </div>
+            <div class="loading-text">INITIALIZING CSS NEURAL NETWORK</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loadingScreen');
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 1000);
+            }, 2000);
+        });
+
+        // Interactive Demo Functions
+        function changeColor() {
+            const box = document.getElementById('demo-box');
+            const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#00ffe1'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            box.style.backgroundColor = randomColor;
+            box.style.boxShadow = `0 0 30px ${randomColor}`;
+        }
+
+        function changeSize() {
+            const box = document.getElementById('demo-box');
+            const currentWidth = parseInt(box.style.width) || 300;
+            const newWidth = currentWidth === 300 ? 400 : 300;
+            box.style.width = newWidth + 'px';
+            box.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                box.style.transform = 'scale(1)';
+            }, 300);
+        }
+
+        function resetDemo() {
+            const box = document.getElementById('demo-box');
+            box.style.backgroundColor = '#2c3e50';
+            box.style.width = '300px';
+            box.style.boxShadow = '0 0 30px rgba(0, 255, 225, 0.3)';
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.cyber-card, .hologram-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Enhanced particle system
+        function createParticles() {
+            const particlesContainer = document.createElement('div');
+            particlesContainer.className = 'particles';
+            document.body.appendChild(particlesContainer);
+            
+            const particleCount = 100;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+                particle.style.opacity = Math.random() * 0.5 + 0.3;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles
+        createParticles();
+
+        // Typing animation for section headers
+        function typeWriter(element, text, speed = 50) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Start typing animation when sections come into view
+        const headerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const header = entry.target.querySelector('h2');
+                    if (header && !header.classList.contains('typed')) {
+                        header.classList.add('typed');
+                        const originalText = header.textContent;
+                        typeWriter(header, originalText, 30);
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('.section-header').forEach(header => {
+            headerObserver.observe(header);
+        });
+    </script>
+</body>
+</html>
